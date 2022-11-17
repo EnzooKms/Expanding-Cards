@@ -1,0 +1,151 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: #FFC048;
+    font-family: 'Roboto', sans-serif;
+}
+
+div {
+    background-color: white;
+    border-radius: 5px;
+    height: 50%;
+    width: 50%;
+    /* border: 3px solid #DBDDE0; */
+    display: flex;
+    align-items: center;
+}
+
+ol {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+li {
+    margin: 0;
+    width: 105.5%;
+    margin-left: -40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: white;
+}
+
+li:hover {
+    background-color: #F9F9F9;
+    cursor: pointer;
+}
+
+#li_center {
+    border-top: 3px solid #DBDDE0;
+    border-bottom: 3px solid #DBDDE0;
+}
+
+h1 {
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+@keyframes AnimGo {
+    0% {
+        padding: 10px;
+        position: relative;
+        right: 10px;
+    }
+
+    20% {
+        padding: 20px;
+        position: relative;
+        right: 20px;
+    }
+
+    40% {
+        padding: 30px;
+        position: relative;
+        right: 30px;
+    }
+
+    60% {
+        padding: 40px;
+        position: relative;
+        right: 40px;
+    }
+
+    80% {
+        padding: 50px;
+        position: relative;
+        right: 50px;
+    }
+
+    100% {
+        padding: 50px;
+        position: relative;
+        right: 50px;
+        box-shadow: 0px 6px 10px 0px #000;
+        border-radius: 5px;
+    }
+}
+
+@keyframes AnimUnGo {
+    100% {
+        padding: 0px;
+        right: 0px;
+        position: unset;
+        box-sizing: "";
+        border-radius: 0px;
+    }
+
+    80% {
+        padding: 10px;
+        position: relative;
+        right: 10px;
+    }
+
+    60% {
+        padding: 20px;
+        position: relative;
+        right: 20px;
+    }
+
+    40% {
+        padding: 30px;
+        position: relative;
+        right: 30px;
+    }
+
+    20% {
+        padding: 40px;
+        position: relative;
+        right: 40px;
+    }
+
+    0% {
+        padding: 50px;
+        position: relative;
+        right: 50px;
+    }
+}
+
+.animGo {
+    animation: AnimGo 1s forwards;
+}
+
+.animUnGo {
+    animation: AnimUnGo 1s forwards;
+}
